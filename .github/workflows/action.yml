@@ -1,0 +1,13 @@
+name: InfluxDB Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: windows
+    steps:
+    - name: Use the secret
+      run: echo ${{ secrets.INFLUXDB_URL }}
