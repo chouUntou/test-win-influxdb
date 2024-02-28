@@ -7,7 +7,7 @@ on:
 
 jobs:
   example-job:
-    runs-on: windows
+    runs-on: windows-latest
     steps:
     - name: Use the secret
       run: echo ${{ secrets.INFLUXDB_URL }}
