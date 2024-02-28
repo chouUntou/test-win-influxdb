@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  example-job:
+  test-win-influxdb:
     runs-on: windows-latest
     steps:
     - name: Use the secret
