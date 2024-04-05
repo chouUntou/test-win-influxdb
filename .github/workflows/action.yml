@@ -10,4 +10,4 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Use the secret
-      run: python hello.py #echo ${{ secrets.INFLUXDB_URL }}
+      run: python /module1/hello.py #echo ${{ secrets.INFLUXDB_URL }}
