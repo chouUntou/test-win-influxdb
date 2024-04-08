@@ -9,5 +9,7 @@ jobs:
   test-win-influxdb:
     runs-on: windows-latest
     steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
     - name: Use the secret
       run: python module1/hello.py #echo ${{ secrets.INFLUXDB_URL }}
